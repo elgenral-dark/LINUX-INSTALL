@@ -1,196 +1,50 @@
-# 🐧 Run Linux on Termux (CLI Version)
+🐧 تشغيل Linux على Termux بدون واجهة رسومية (CLI)
 
-<p align="center">
-  <img src="https://i.imgur.com/8Km9tLL.png" width="220">
-</p>
+لو عايز تشغل Linux على Termux بشكل خفيف وسريع باستخدام الـ Terminal فقط، اتبع الخطوات دي 👇
 
-<p align="center">
-  <b>Install & Run Linux Inside Termux Easily ⚡</b>
-</p>
+📌 أول حاجة حدّث Termux:
 
-<p align="center">
-  Ubuntu • Linux CLI • Termux • Android
-</p>
-
----
-
-![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
-![Platform](https://img.shields.io/badge/Platform-Termux-black)
-![Status](https://img.shields.io/badge/Status-Working-success)
-
----
-
-# 📌 About
-
-This guide explains how to install and run Linux inside Termux using `proot-distro`.
-
-This method runs Linux in CLI mode (Terminal only) without GUI.
-
-Perfect for:
-- Programming
-- Python Development
-- Linux Learning
-- Termux Tools
-- Lightweight Usage
-
----
-
-# ⚡ Update Termux
-
-```bash
 pkg update && pkg upgrade -y
-```
 
----
+📌 ثبّت proot-distro:
 
-# 📦 Install proot-distro
-
-```bash
 pkg install proot-distro -y
-```
 
----
+📌 اعرض الأنظمة المتاحة:
 
-# 📜 Show Available Linux Distributions
-
-```bash
 proot-distro list
-```
 
----
+📌 ثبّت Ubuntu:
 
-# 🐧 Install Ubuntu
-
-```bash
 proot-distro install ubuntu
-```
 
----
+📌 شغّل Linux:
 
-# 🚀 Start Linux
-
-```bash
 proot-distro login ubuntu
-```
 
-If Linux starts successfully, you will see something like:
-
-```bash
+لو ظهر لك:
 root@localhost:~#
-```
 
----
+يبقى Linux اشتغل بنجاح ✅
 
-# 🔄 Update Ubuntu
+📌 حدّث Ubuntu:
 
-```bash
 apt update && apt upgrade -y
-```
 
----
+📌 ثبّت Python و Git:
 
-# 🛠 Install Python & Git
-
-```bash
 apt install python3 git -y
-```
 
----
+📌 للخروج من Linux:
 
-# 📂 Clone Projects From GitHub
-
-```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
-cd REPOSITORY
-```
-
----
-
-# ▶ Run Python File
-
-```bash
-python3 main.py
-```
-
----
-
-# ❌ Exit Linux
-
-```bash
 exit
-```
 
----
+🔥 مميزات الطريقة:
+• خفيفة جدًا
+• سريعة على الموبايل
+• ممتازة للبرمجة
+• استهلاك RAM قليل
+• مناسبة للأدوات وTermux
 
-# 📷 Screenshot
-
-<p align="center">
-  <img src="https://i.imgur.com/4M34hi2.png">
-</p>
-
----
-
-# 📂 Project Structure
-
-```text
-project/
-│
-├── README.md
-├── install.sh
-├── main.py
-└── requirements.txt
-```
-
----
-
-# ✅ Features
-
-- Fast Linux Setup
-- Lightweight
-- Beginner Friendly
-- Supports Ubuntu
-- Perfect For Developers
-- Works On Android
-
----
-
-# 📱 Requirements
-
-- Android Device
-- Termux Latest Version
-- Stable Internet Connection
-
----
-
-# 👨‍💻 Developer
-
-## GENERAL DEV
-
-GitHub:
-https://github.com/elgenral-dark
-
----
-
-# ⭐ Support
-
-If you like this project:
-
-- ⭐ Star The Repository
-- 🍴 Fork The Project
-- 📢 Share With Friends
-
----
-
-# ⚠ Disclaimer
-
-This project is made for:
-- Educational Purposes
-- Linux Learning
-- Development
-- Programming
-
-Use responsibly.
-
----
-
-# ❤️ Thanks For Using This Project
+⚠ ملحوظة:
+النسخة دي بدون واجهة رسومية، يعني شغالة كسطر أوامر فقط (CLI).
