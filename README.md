@@ -1,7 +1,7 @@
 # 🚀 ElGenral Linux Installer
 
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtuNjcZjI_YR0TifhDUPVDwBNds55VtLYQ98FLmHQmiQ&s=10" width="220">
+  <img src="https://www.kali.org/wallpapers/images/2022/kali-ascii.png=10" width="220">
 </p>
 
 <p align="center">
