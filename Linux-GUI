@@ -1,0 +1,68 @@
+🖥 تشغيل Linux على Termux بواجهة رسومية كاملة (GUI)
+
+لو عايز تشغل Linux على Termux بواجهة زي الكمبيوتر وتفتح سطح مكتب كامل على موبايلك، اتبع الخطوات دي 👇
+
+📌 أول حاجة حدّث Termux:
+
+pkg update && pkg upgrade -y
+
+📌 ثبّت proot-distro:
+
+pkg install proot-distro -y
+
+📌 ثبّت Ubuntu:
+
+proot-distro install ubuntu
+
+📌 شغّل Ubuntu:
+
+proot-distro login ubuntu
+
+📌 حدّث النظام:
+
+apt update && apt upgrade -y
+
+📌 ثبّت الواجهة الرسومية XFCE:
+
+apt install xfce4 xfce4-goodies -y
+
+📌 ثبّت VNC Server:
+
+apt install tigervnc-standalone-server -y
+
+📌 اعمل باسورد للواجهة:
+
+vncserver
+
+📌 فعّل تشغيل الواجهة:
+
+echo "startxfce4" > ~/.vnc/xstartup
+chmod +x ~/.vnc/xstartup
+
+📌 شغّل الواجهة:
+
+vncserver :1
+
+📌 نزّل تطبيق:
+VNC Viewer
+
+واتصل بـ:
+
+127.0.0.1:1
+
+🔥 دلوقتي هتقدر تستخدم Linux بواجهة كاملة على موبايلك زي الكمبيوتر 😎
+
+📌 لإيقاف الواجهة:
+
+vncserver -kill :1
+
+🔥 مميزات الطريقة:
+• واجهة رسومية كاملة
+• تشغيل Linux مثل الكمبيوتر
+• تشغيل برامج رسومية
+• تجربة احترافية على الموبايل
+• مناسبة للتعلم والتجربة
+
+⚠ ملحوظة:
+الواجهة الرسومية تستهلك RAM وبطارية أكثر من النسخة العادية.
+يفضل استخدامها على الأجهزة المتوسطة أو القوية.
